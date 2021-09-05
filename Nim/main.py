@@ -53,13 +53,4 @@ def computerTurn(n):
         return 1
 
 
-def memoized(n):
-    sol = [False] * (n+1)
-    sol[0] = True
-    for i in range (2, n+1):
-        sol[i] = not(sol[i-1] and sol[i-2])
-    print(sol)
-    return sol[n]
-
-
-nim(61)
+nim(45)
